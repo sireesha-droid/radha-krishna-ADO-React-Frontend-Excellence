@@ -1,0 +1,107 @@
+.about-container {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+    display: inline-block;
+}
+
+.about-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.about-text strong {
+    color: var(--text-primary);
+}
+
+.about-highlight {
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin: var(--spacing-sm) 0;
+    border-left: 4px solid var(--accent-color);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.about-highlight p {
+    margin: 0;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+.about-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-card {
+    padding: var(--spacing-xl);
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+}
+
+.about-image-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--accent-color);
+}
+
+.about-image-card ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.about-image-card li {
+    position: relative;
+    padding-left: 28px;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.about-image-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image-wrapper {
+        width: 100%;
+        margin-top: var(--spacing-lg);
+    }
+}

@@ -1,0 +1,61 @@
+.add-course-form {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.add-course-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.add-course-form .form-group {
+    margin-bottom: 15px;
+}
+
+.add-course-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.add-course-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.add-course-form button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-course-form button:hover {
+    background: #45a049;
+}
+
+.success-msg {
+    color: #4caf50;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error-msg {
+    color: #f44336;
+    margin-top: 10px;
+    text-align: center;
+}
