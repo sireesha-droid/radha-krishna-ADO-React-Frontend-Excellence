@@ -1,5 +1,5 @@
 pool:
-  name: 'dev-env01'
+  name: 'dev-cluster01'
   
 variables:
   version: 'frontend_$(Build.BuildId)'
